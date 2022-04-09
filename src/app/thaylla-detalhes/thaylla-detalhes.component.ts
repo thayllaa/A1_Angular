@@ -14,9 +14,9 @@ export class ThayllaDetalhesComponent implements OnInit {
   constructor(private route: ActivatedRoute) {}
 
   ngOnInit() {
-    this.route.paramMap.subscribe((params) => {
-      this.item = listData[params.get('index')];
-    });
+    this.route.paramMap.subscribe(
+      params => (this.item = listData[params.get("index")])
+    );
   }
 
 }
