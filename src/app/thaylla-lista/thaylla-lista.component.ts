@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ThayllaDisciplinasService } from '../thaylla-disciplinas.service';
 
 @Component({
   selector: 'app-thaylla-lista',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ThayllaListaComponent implements OnInit {
 
-  constructor() { }
+  constructor(public lista: ThayllaDisciplinasService) { }
 
   ngOnInit() {
   }
