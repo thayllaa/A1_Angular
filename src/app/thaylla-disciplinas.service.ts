@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 
 interface Disciplinas {
+  id: string;
   name: string;
   day: string;
   hour: string;
@@ -68,7 +69,7 @@ export class ThayllaDisciplinasService {
   }
 
   add(name: string, day: string, hour:string, ement: string) {
-    this.lista.push({ name, day, hour, ement });
+    this.lista.push({ id, name, day, hour, ement });
   }
 
   remove(index: number) {
