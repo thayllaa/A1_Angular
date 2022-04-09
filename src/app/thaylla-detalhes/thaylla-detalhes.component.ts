@@ -9,6 +9,7 @@ import { listData } from '../list';
   styleUrls: ['./thaylla-detalhes.component.css']
 })
 export class ThayllaDetalhesComponent implements OnInit {
+  list = listData;
   item;
 
   constructor(private route: ActivatedRoute) {}
