@@ -11,27 +11,29 @@
     <option value="Sábado">Sábado</option>
   </select>
 
-  <br />
+  <br>
 
   <label> ID da disciplina: </label>
   <input type="text" class="form-control" id="autoSizingInputGroup"
     placeholder="Id da disciplina" #id/>
-  <br />
+  <br>
 
   <label> Nome da disciplina: </label>
   <input type="text" class="form-control" id="autoSizingInputGroup"
     placeholder="Nome da disciplina" #name/>
-  <br />
+  <br>
 
-  <label> Horário: </label>
-  <input type="time" class="form-control" #hour />
-  <br />
+  <label> Horário da disciplina: </label><br>
+  <label> Início: </label><input type="time" class="form-control" #hour />
+  <br>
+  <label> Término: </label><input type="time" class="form-control" #hour />
+  <br>
 
   <label> Ementa da disciplina: </label>
   <input type="text" class="form-control" id="autoSizingInputGroup"
     placeholder="Ementa da disciplina" #ement/>
-  <br />
-</form>
+  <br>
+</form><br>
 
 <button
   (click)="lista.add(id.value, name.value, day.value, hour.value, ement.value);
@@ -39,6 +41,7 @@
     hour.value = ''; ement.value = ''; ">
   Adicionar
 </button>
+<br> <br>
 
 <table class="table">
   <tr>
