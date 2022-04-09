@@ -68,8 +68,8 @@ export class ThayllaDisciplinasService {
     return this.lista;
   }
 
-  add(id: string, name: string, day: string, hour:string, ement: string) {
-    this.lista.push({ id, name, day, hour, ement });
+  add(name: string, day: string, hour:string, ement: string) {
+    this.lista.push({ name, day, hour, ement });
   }
 
   remove(index: number) {

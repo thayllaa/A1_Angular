@@ -1,12 +1,36 @@
 <h2> Disciplinas </h2>
 
-<div>
-  <input #input type="text" />
-  <button (click)="lista.add(input.value, input.value, input.value, 
-  input.value, input.value); input.value = ''"> 
-    Adicionar 
-  </button>
-</div><br>
+<form>
+  <label> Dia da Semana: </label>
+  <select #day>
+    <option value="Segunda-feira">Segunda-feira</option>
+    <option value="Terça-feira">Terça-feira</option>
+    <option value="Quarta-feira">Quarta-feira</option>
+    <option value="Quinta-feira">Quinta-feira</option>
+    <option value="Sexta-feira">Sexta-feira</option>
+    <option value="Sábado">Sábado</option>
+  </select>
+
+  <br />
+
+  <label> Nome da disciplina: </label>
+  <input type="text" class="form-control" id="autoSizingInputGroup"
+    placeholder="Nome da disciplina" #name/>
+  <br />
+
+  <label> Horário: </label>
+  <input type="time" class="form-control" #hour />
+</form>
+
+<button
+  (click)="lista.add(name.value, day.value, hour.value, ement.value);
+    name.value = '';
+    day.selectedIndex = 0
+    hour.value = '';
+    ement.value = '';
+  ">
+  Adicionar
+</button>
 
 <table>
   <tr>
