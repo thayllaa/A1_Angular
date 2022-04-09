@@ -6,7 +6,7 @@ import { ThayllaDisciplinasService } from '../thaylla-disciplinas.service';
   templateUrl: './thaylla-lista.component.html',
   styleUrls: ['./thaylla-lista.component.css']
 })
-export class ThayllaListaComponent implements OnInit {]
+export class ThayllaListaComponent implements OnInit {
   constructor(public lista: ThayllaDisciplinasService) { }
 
   ngOnInit() {
