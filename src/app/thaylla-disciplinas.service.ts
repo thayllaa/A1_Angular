@@ -36,7 +36,7 @@ export class ThayllaDisciplinasService {
       id: "ISW012",
       name: "Desenvolvimento para Dispositivos Móveis I",
       day: "Segunda-Feira",
-      hour: "18h - 22h30",
+      hour: "19h - 22h30",
       ement: "",
     },
     {
