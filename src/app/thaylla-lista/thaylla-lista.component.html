@@ -13,6 +13,11 @@
 
   <br />
 
+  <label> ID da disciplina: </label>
+  <input type="text" class="form-control" id="autoSizingInputGroup"
+    placeholder="Nome da disciplina" #id/>
+  <br />
+
   <label> Nome da disciplina: </label>
   <input type="text" class="form-control" id="autoSizingInputGroup"
     placeholder="Nome da disciplina" #name/>
@@ -20,15 +25,18 @@
 
   <label> Horário: </label>
   <input type="time" class="form-control" #hour />
+  <br />
+
+  <label> Ementa da disciplina: </label>
+  <input type="text" class="form-control" id="autoSizingInputGroup"
+    placeholder="Nome da disciplina" #ement/>
+  <br />
 </form>
 
 <button
-  (click)="lista.add(name.value, day.value, hour.value, ement.value);
-    name.value = '';
-    day.selectedIndex = 0
-    hour.value = '';
-    ement.value = '';
-  ">
+  (click)="lista.add(id.value, name.value, day.value, hour.value, ement.value);
+    id.value = ''; name.value = ''; day.selectedIndex = 0;
+    hour.value = ''; ement.value = ''; ">
   Adicionar
 </button>
 
