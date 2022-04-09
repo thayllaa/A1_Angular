@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 
 interface Disciplinas {
-  id: string;
   name: string;
   day: string;
   hour: string;
